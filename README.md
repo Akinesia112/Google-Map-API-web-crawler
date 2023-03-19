@@ -19,7 +19,7 @@ Fig 1 Analysis Demo
   ![image](Analysis_Demo.jpg)
 
 
-## Google Map API
+## Google Map API: Take NCKU as Example
 
 1. Directions API - Route Planning
 2. Distance Matrix API - Calculation of Distance and Travel Time
@@ -82,8 +82,12 @@ Calculate the path length and travel time of all point-to-point in the list.
     jupyter nbextension enable --py gmaps
 
   P.S. It is confirmed that it can be displayed in jupyter notebook, jupyter lab has not tested
+  
+▌Add Marker
+
 
 ***3. Geocoding API***
+
 
 ***4. Maps JavaScript API***
 
