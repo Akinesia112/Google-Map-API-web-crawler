@@ -44,7 +44,7 @@ Wrap Http URL Request into function form:
     
     pip install googlemaps (installed when setting up the environment)
 
-EX : Geocoding API
+***1.Geocoding API***
 
 https://maps.googleapis.com/maps/api/geocode/json?address=成大&key=YOUR_API_KEY
 
@@ -58,12 +58,35 @@ Convert coordinates and addresses to each other:
     
 Finally geocode_location gets (22.9988416,120.2195148).
 
-***1. Distance Matrix API***
-
-
 ***2. Distance Matrix API***
+
+Calculate the path length and travel time of all point-to-point in the list.
+
+    maps = googlemaps. Client(key=YOUR_API_KEY )
+    result = maps.distance_matrix(location latitude and longitude list)
+
+***3. Places API***
+
+    maps = googlemaps.Client(key=YOUR_API_KEY )
+    result = maps.places_nearby(location=(lat,lng), radius=,type=)
+
+  Return format: Json
+  
+  Common optional parameters: type (the type of location to search for)
+  
+▌Show in Google Map
+  
+  Installation kit (installed during environment setup)
+  
+    pip install gmaps
+    jupyter nbextension enable --py gmaps
+
+  P.S. It is confirmed that it can be displayed in jupyter notebook, jupyter lab has not tested
+
 ***3. Geocoding API***
+
 ***4. Maps JavaScript API***
+
 ***5. Places API***
 
 
