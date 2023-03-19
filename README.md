@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Integration Plan of "Southern Tainan Suburb Center and Surrounding Areas" in East District of Tainan City**
+***Integration Plan of "Southern Tainan Suburb Center and Surrounding Areas" in East District of Tainan City***
 
 **(臺南市東區南臺南副都心與周邊地區整合計畫)** [Website Link](https://www.behance.net/gallery/166339751/Integration-Plan-of-Southern-Tainan-Suburb-Center-Area)
 
@@ -27,7 +27,37 @@ Fig 1 Analysis Demo
 4. Maps JavaScript API - Customize the Interactive Map
 5. Places API - Location Search
 
-▌
+▌Http URL Request
+
+Evample：
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=22.9988416,120.2195148&radius=1000&type=restaurant&key=AIzaSyBZ2Z5rAD6S1MvdQOMg-5YqRZeBXYI6UXU
+
+Example parameters:
+
+    - location=22.9988416,120.2195148
+    - radius=1000
+    - type=restaurant
+    - key=AIzaSyBZ2Z5rAD6S1MvdQOMg-5YqRZeBXYI6UXU (change your own Key)
+    
+Wrap Http URL Request into function form:
+    
+    pip install googlemaps (installed when setting up the environment)
+
+EX : Geocoding API
+
+https://maps.googleapis.com/maps/api/geocode/json?address=成大&key=YOUR_API_KEY
+
+    maps = googlemaps.Client(key=YOUR_API_KEY )
+    result = maps.geocode('成大’)
+    
+Convert coordinates and addresses to each other:
+
+    maps = googlemaps. Client(key=YOUR_API_KEY )
+    result = maps.geocode('Chengdu')
+    
+Finally geocode_location gets (22.9988416,120.2195148).
+
 
 ## Web-Crawler
 
