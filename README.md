@@ -21,7 +21,12 @@ Fig 1 Analysis Demo
 
 ▌Google Map API
 
-1. *`2022_Jun-Sep_降雨量(mm)_分景點_小雨1,大雨2,強雨3.csv`*: Rainfall Data.
+1. Directions API - Route Planning
+2. Distance Matrix API - Calculation of Distance and Travel Time
+3. Geocoding API - Convert Coordinates and Addresses
+4. Maps JavaScript API - Customize the Interactive Map
+5. Places API - Location Search
+![image](https://user-images.githubusercontent.com/97179312/226177649-518ed145-1aee-475f-a647-c1fd566fa01d.png)
 
 2. 
 
