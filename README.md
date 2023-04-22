@@ -47,14 +47,11 @@ Wrap Http URL Request into function form:
 ***1.Geocoding API***
 
 https://maps.googleapis.com/maps/api/geocode/json?address=成大&key=YOUR_API_KEY
-
-    maps = googlemaps.Client(key=YOUR_API_KEY )
-    result = maps.geocode('成大’)
     
 Convert coordinates and addresses to each other:
 
     maps = googlemaps. Client(key=YOUR_API_KEY )
-    result = maps.geocode('Chengdu')
+    result = maps.geocode('成大')
     
 Finally geocode_location gets (22.9988416,120.2195148).
 
@@ -69,10 +66,14 @@ Calculate the path length and travel time of all point-to-point in the list.
 
     maps = googlemaps.Client(key=YOUR_API_KEY )
     result = maps.places_nearby(location=(lat,lng), radius=,type=)
+    
+    Required parameters:
+    - Location : the center of the search range (latitude and longitude)
+    - Radius : the radius of the search area (m)
+    - Return format: Json 
+    - Common optional parameters: type (the type of location to search for)
 
-  Return format: Json
-  
-  Common optional parameters: type (the type of location to search for)
+  Return the result after calling with URL, and then use Python to parse the data.
   
 ▌Show in Google Map
   
@@ -84,7 +85,13 @@ Calculate the path length and travel time of all point-to-point in the list.
   P.S. It is confirmed that it can be displayed in jupyter notebook, jupyter lab has not tested
   
 ▌Add Marker
+  ![image](Add_Marker.png)
+  
+▌Add Heat Map
+  ![image](Add_Heat_Map.png)
 
+▌Add Directions
+  ![image](Add_Directions.png)
 
 ***3. Geocoding API***
 
