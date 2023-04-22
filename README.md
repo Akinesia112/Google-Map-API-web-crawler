@@ -121,15 +121,9 @@ Enter the id of the place (the previous crawler has storage), return the result 
 
 ## Web-Crawler
 
-1. *`2022_Jun-Sep_降雨量(mm)_分景點_小雨1,大雨2,強雨3.csv`*: Rainfall Data.
+Python sends a Get request, returns the webpage data and analyzes it with Python.
 
+Use the get method of requests to grab the webpage, and the text attribute is the html file, specify html.parser as the parser, and grab <a></a>.
 
-## Results
-
-  ![image](Isochrone.PNG)   
+  ![image](Crawler.png)   
  
-  * Isochrones of tourist attractions
-  
-  ![image](Weather_Station_Voronoi.PNG)   
-
-  * Voronoi regions of Tainan weather station
