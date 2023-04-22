@@ -85,13 +85,16 @@ Calculate the path length and travel time of all point-to-point in the list.
   P.S. It is confirmed that it can be displayed in jupyter notebook, jupyter lab has not tested
   
 ▌Add Marker
-  ![image](Add_Marker.png)
+
+![image](Add_Marker.png)
   
 ▌Add Heat Map
-  ![image](Add_Heat_Map.png)
+
+![image](Add_Heat_Map.png)
 
 ▌Add Directions
-  ![image](Add_Directions.png)
+
+![image](Add_Directions.png)
 
 ***3. Geocoding API***
 
