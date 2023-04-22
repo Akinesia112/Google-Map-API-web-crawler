@@ -86,9 +86,15 @@ Calculate the path length and travel time of all point-to-point in the list.
   
 ▌Add Marker
 
+Search for the latitude and longitude of NCKU, find the latitude and longitude from the returned results, and mark the found points on google maps through gmaps.
+
 ![image](Add_Marker.png)
   
 ▌Add Heat Map
+
+Use the number of ratings to present the heat map of crawling locations.
+
+Set the latitude and longitude of all locations in the DataFrame, the maximum display value of the heat map and the radius of the points in the heat map.
 
 ![image](Add_Heat_Map.png)
 
@@ -96,12 +102,21 @@ Calculate the path length and travel time of all point-to-point in the list.
 
 ![image](Add_Directions.png)
 
-***3. Geocoding API***
+▌Route Planning
 
+Use the top five locations with the highest ratings to plan the route.
 
-***4. Maps JavaScript API***
+Put the latitude and longitude of the top 5 restaurants with the highest number of comments into the array, create gmaps, set the latitude and longitude of the starting point, end point, and passing point, and calculate the total distance and time spent through another function. 
 
-***5. Places API***
+From the starting point of NCKU, pass through in sequence according to the order of the first five high places.
+
+![image](Route_Planning.png)
+
+▌Crawl the Popular Times of a Place
+
+Enter the id of the place (the previous crawler has storage), return the result as the 24-hour popularity of each 7 days a week, add up the hourly popularity of the 7 days, and draw the summed 24-hour popularity as a long bar picture
+
+![image](Popular_Times.png)
 
 
 ## Web-Crawler
